@@ -27,9 +27,13 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  > p {
+  p {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #56ccff, #6eafb4);
+    padding: 10px;
+    border: 2px white solid;
+    border-radius: 5px;
     
   }
 

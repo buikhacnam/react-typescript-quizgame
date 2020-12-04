@@ -14,8 +14,6 @@ export type AnswerObject = {
 const TOTAL_QUESTION = 10;
 function App() {
 
-  
-  
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState<QuestionState[]>([]);
   const [number, setNumber] = useState(0);
@@ -32,6 +30,9 @@ function App() {
 
     const newQuestions = await fetchQuizQuestions(TOTAL_QUESTION, Difficulty.EASY);
 
+    setNumber(0);
+    setScore(0);
+    setUserAnswers([]);
     setQuestions(newQuestions);
     setLoading(false);
     
