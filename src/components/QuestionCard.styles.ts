@@ -27,6 +27,9 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
   }
 
   button {
+    &:hover{
+      color: black;
+    }
     cursor: pointer;
     user-select: none;
     font-size: 0.8rem;
